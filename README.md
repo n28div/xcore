@@ -75,7 +75,11 @@ Input documents can be either:
 
 
 ### Predict
-You can use model.predict() to obtain coreference predictions of any kind of input text.
+You can use: 
+```
+model.predict()
+````
+to obtain coreference predictions of any kind of input text.
 The model will return a dictionary containing:
 - `tokens`, word tokenized version of the input.
 - `clusters_token_offsets`, a list of clusters containing mentions' token offsets as a tuple (start, end). When dealing with multiple documents, it becomes a triplet (doc, start, end) in which doc is the index of the document in input.
@@ -128,7 +132,7 @@ model.predict([text1, text2, text3], "cross")
 
 
 **Singletons:** 
-For any of the above settings, either include or exclude singletons (i.e., single mention clusters) prediction by setting `singletons` to `True` or `False`.
+For all of the above settings, either include or exclude singletons (i.e., single mention clusters) prediction by setting `singletons` to `True` or `False`.
 *(hint: for accurate singletons use PreCo- or LitBank-based models, since OntoNotes does not include singletons and therefore the model is not trained to extract any)*
   ```bash
   model.predict(ontonotes_format, singletons=True)
@@ -160,7 +164,7 @@ Official Links:
 - [PreCo](https://drive.google.com/file/d/1q0oMt1Ynitsww9GkuhuwNZNq6SjByu-Y/view)
 - [LitBank](https://github.com/dbamman/litbank/tree/master/coref/conll)
 - [BookCoref](https://huggingface.co/datasets/sapienzanlp/bookcoref)
-- [ECB+]()
+- [ECB+](http://www.newsreader-project.eu/results/data/the-ecb-corpus/)
 - [SciCo](https://huggingface.co/datasets/allenai/scico)
 
 Since those datasets usually require a preprocessing step to obtain the OntoNotes-like jsonlines format, except for BookCoref, which we suggest to download with [huggingface](https://huggingface.co/datasets/sapienzanlp/bookcoref), we release a ready-to-use version:
