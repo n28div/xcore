@@ -5,9 +5,8 @@ modelss/*
 .vscode
 best/*
 resources/*
-*.ckpt
 models/*
-old_checkpoint/*
+old_checkpoints/*
 outputs/*
 s7_maverick_to_xcore.py
 xcore/models/maverick.py
