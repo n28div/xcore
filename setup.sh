@@ -6,12 +6,12 @@ source "$CONDA_BASE"/etc/profile.d/conda.sh
 
 # create conda env
 read -rp "Enter environment name: " ENV_NAME
-read -rp "Enter python version (default 3.11): " PYTHON_VERSION
+read -rp "Enter python version (default 3.12): " PYTHON_VERSION
 if [ -z "$PYTHON_VERSION" ]; then
-  PYTHON_VERSION="3.11"
+  PYTHON_VERSION="3.12"
 fi
-conda create -yn maverick-coref python="$PYTHON_VERSION"
-conda activate maverick-coref
+conda create -yn xcore-coref python="$PYTHON_VERSION"
+conda activate xcore-coref
 
 # replace placeholder env with $ENV_NAME in scripts/train.sh
 NEW_CONDA_LINE="source \$CONDA_BASE/bin/activate maverick-coref"

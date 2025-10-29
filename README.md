@@ -203,15 +203,15 @@ This will directly output the CoNLL-2012 scores, and, under the experiments/ fol
 
 
 # Citation
-This work has been published at the [EMNLP 2025 main conference](https://aclanthology.org/2024.acl-long.722.pdf). 
+This work has been published at the [EMNLP 2025 main conference](https://aclanthology.org). 
 If you use any part, please consider citing our paper as follows:
 ```bibtex
-@inproceedings{martinelli-etal-2025-xcore,xxx
+@inproceedings{martinelli-etal-2025-xcore,
     title = "xCoRe: Cross-context Coreference Resolution",
     author = "Martinelli, Giuliano  and
       Gatti, Bruno and
       Navigli, Roberto",
-    booktitle = "Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    booktitle = "Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing",
     month = nov,
     year = "2025",
     address = "Suzhou, Cina",
