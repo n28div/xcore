@@ -10,7 +10,7 @@
 
 ##  Description
 This repository contains the official code for the EMNLP 2025 main conference paper:  [*xCoRe:
-Cross-Context Coreference Resolution*]() by [Giuliano Martinelli](https://www.linkedin.com/in/giuliano-martinelli-20a9b2193/), [Bruno Gatti](https://www.linkedin.com/in/tommaso-bonomo/) and [Roberto Navigli](https://www.linkedin.com/in/robertonavigli/).
+Cross-Context Coreference Resolution*](https://aclanthology.org/2025.emnlp-main.1737/) by [Giuliano Martinelli](https://www.linkedin.com/in/giuliano-martinelli-20a9b2193/), [Bruno Gatti](https://www.linkedin.com/in/tommaso-bonomo/) and [Roberto Navigli](https://www.linkedin.com/in/robertonavigli/).
 
 xCoRe is the first all-in-one model that has best-in-class performance for every coreference resolution setting, working seamlessly with short, medium-sized, long, and multiple documents.
 
@@ -206,20 +206,26 @@ This will directly output the CoNLL-2012 scores, and, under the experiments/ fol
 
 
 # Citation
-This work has been published at the [EMNLP 2025 main conference](https://aclanthology.org). 
+This work has been published at the [EMNLP 2025 main conference](https://aclanthology.org/2025.emnlp-main.1737/). 
 If you use any part, please consider citing our paper as follows:
 ```bibtex
 @inproceedings{martinelli-etal-2025-xcore,
-    title = "xCoRe: Cross-context Coreference Resolution",
+    title = "x{C}o{R}e: Cross-context Coreference Resolution",
     author = "Martinelli, Giuliano  and
-      Gatti, Bruno and
+      Gatti, Bruno  and
       Navigli, Roberto",
+    editor = "Christodoulopoulos, Christos  and
+      Chakraborty, Tanmoy  and
+      Rose, Carolyn  and
+      Peng, Violet",
     booktitle = "Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing",
     month = nov,
     year = "2025",
-    address = "Suzhou, Cina",
+    address = "Suzhou, China",
     publisher = "Association for Computational Linguistics",
-
+    url = "https://aclanthology.org/2025.emnlp-main.1737/",
+    pages = "34252--34266"
+}
 ```
 
 ## License
